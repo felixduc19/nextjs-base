@@ -1,9 +1,11 @@
-'use client'
-
 import { useGetUsersQuery } from '@/redux/services/userApi'
 
 const UserList = () => {
-    const { isLoading, isFetching, data, error } = useGetUsersQuery(null)
+    const { isLoading, isFetching, data, error } = useGetUsersQuery(null, {
+        refetchOnFocus: true,
+        refetchOnReconnect: true,
+        pollingInterval: 20000,
+    })
 
     return (
         <main style={{ maxWidth: 1200, marginInline: 'auto', padding: 20 }}>

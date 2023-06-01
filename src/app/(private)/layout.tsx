@@ -1,7 +1,6 @@
 'use client'
-import '@/assets/styles/globals.css'
 
-import PrivateLayout from '@/components/layouts/PrivateLayout'
+import '@/assets/styles/globals.css'
 
 export default function AuthLayout({
     children,
@@ -11,7 +10,7 @@ export default function AuthLayout({
     return (
         <>
             <h1>Auth layout</h1>
-            <PrivateLayout>{children}</PrivateLayout>
+            {children}
         </>
     )
 }
