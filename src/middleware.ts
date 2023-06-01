@@ -3,14 +3,6 @@ import { NextRequestWithAuth } from 'next-auth/middleware'
 
 export default function middleware(request: NextRequestWithAuth) {
     if (
-        request.nextUrl.pathname.startsWith('/login') &&
-        request.cookies.get('next-auth.session-token')
-    ) {
-        // Restricted router
-        return NextResponse.redirect(new URL('/dashboard', request.url))
-    }
-
-    if (
         !request.cookies.get('next-auth.session-token') &&
         !request.nextUrl.pathname.startsWith('/login')
     ) {
@@ -35,6 +27,7 @@ export const config = {
          * - _next/image (image optimization files)
          * - favicon.ico (favicon file)
          */
+        // can modify
         '/((?!api|_next/static|_next/image|favicon.ico).*)',
     ],
 }
