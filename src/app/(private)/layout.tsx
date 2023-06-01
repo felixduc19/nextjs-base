@@ -9,7 +9,7 @@ export default function AuthLayout({
 }) {
     return (
         <>
-            <h1>Auth layout</h1>
+            <h1 className="font-light">Auth layout</h1>
             {children}
         </>
     )
