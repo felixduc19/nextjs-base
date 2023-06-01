@@ -6,7 +6,7 @@ import UserList from './components/UserList'
 export default function Home() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <span>Font family</span>
+            <span className="text-black">Font family</span>
             <div className="font-light">Jost 300</div>
             <div className="font-normal">Jost 400</div>
             <div className="font-medium">Jost 500</div>

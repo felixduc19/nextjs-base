@@ -27,6 +27,7 @@ body {
 }
 
 @layer base {
+    /*Add base class when writing a component example */
     /* JOST FONT-FAMILY */
     @font-face {
         font-family: 'Jost';
@@ -92,4 +93,16 @@ body {
         font-weight: 500;
         font-style: normal;
     }
+}
+
+@layer components {
+    /*Custom class (override base class) when writing a component */
+    /* example */
+    .text-primary {
+        @apply text-black;
+    }
+}
+
+@layer utilities {
+    /*Custom class override base and components class*/
 }
