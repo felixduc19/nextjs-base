@@ -1,13 +1,15 @@
+'use client'
+
 import '@/assets/styles/globals.css'
 
-export default function HomeLayout({
+export default function AuthLayout({
     children,
 }: {
     children: React.ReactNode
 }) {
     return (
         <>
-            <h1>hello</h1>
+            <h1 className="font-light">Auth layout</h1>
             {children}
         </>
     )

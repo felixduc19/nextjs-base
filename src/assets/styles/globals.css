@@ -25,3 +25,84 @@ body {
         )
         rgb(var(--background-start-rgb));
 }
+
+@layer base {
+    /*Add base class when writing a component example */
+    /* JOST FONT-FAMILY */
+    @font-face {
+        font-family: 'Jost';
+        src: url('../fonts/Jost/Jost-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        src: url('../fonts/Jost/Jost-LightItalic.ttf') format('truetype');
+        font-weight: 300;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'Jost';
+        src: url('../fonts/Jost/Jost-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Jost';
+        src: url('../fonts/Jost/Jost-Italic.ttf') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'Jost';
+        src: url('../fonts/Jost/Jost-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Jost';
+        src: url('../fonts/Jost/Jost-MediumItalic.ttf') format('truetype');
+        font-weight: 500;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'Jost';
+        src: url('../fonts/Jost/Jost-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Jost';
+        src: url('../fonts/Jost/Jost-SemiBoldItalic.ttf') format('truetype');
+        font-weight: 600;
+        font-style: italic;
+    }
+    /* Oswald FONT-FAMILY */
+
+    @font-face {
+        font-family: 'Oswald';
+        src: url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Oswald';
+        src: url('../fonts/Oswald/Oswald-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+}
+
+@layer components {
+    /*Custom class (override base class) when writing a component */
+    /* example */
+    .text-primary {
+        @apply text-black;
+    }
+}
+
+@layer utilities {
+    /*Custom class override base and components class*/
+}
