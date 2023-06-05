@@ -2,6 +2,7 @@
 import { signOut } from 'next-auth/react'
 
 import UserList from './components/UserList'
+import { CloseIcon } from '@/assets/icons'
 
 export default function Home() {
     return (
@@ -13,7 +14,8 @@ export default function Home() {
             <div className="font-semibold">Jost 600</div>
             <div className="font-oswald font-normal">Oswald 400</div>
             <div className="font-oswald font-medium">Oswald 500</div>
-
+            <CloseIcon className="text-red-600 w-[20px] h-[20px]"/>
+            {/* <UserList /> */}
             <button
                 onClick={() => {
                     signOut()

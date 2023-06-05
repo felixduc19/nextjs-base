@@ -1,6 +1,7 @@
-import '@/assets/styles/globals.css'
 import { getServerSession } from 'next-auth/next'
 import { redirect } from 'next/navigation'
+
+import '@/assets/styles/globals.css'
 
 export default async function HomeLayout({
     children,
